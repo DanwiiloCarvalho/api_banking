@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     POSTGRES_USER: str
     POSTGRES_DB: str
     POSTGRES_PASSWORD: str
+    POSTGRES_HOST: str
     model_config = SettingsConfigDict(case_sensitive=True, env_file='.env')
 
 
